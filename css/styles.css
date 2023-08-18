@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Inter&family=JetBrains+Mono:wght@500&family=Poppins&family=Roboto+Mono&family=Sofia+Sans:wght@600&family=Source+Code+Pro:wght@600&family=Space+Grotesk:wght@500&family=Space+Mono:wght@700&display=swap');
+
+body {
+    background-image: url('https://wallpaperaccess.com/full/2984715.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Sofia Sans';
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes intro {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+      filter: blur(10px);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+
+.title {
+    margin-top: -5.5rem;
+}
+
+.home {
+    display: block;
+    text-align: center;
+    animation: intro 1s cubic-bezier(0.77, 0, 0.175, 1)    ;
+}
+
+.logo {
+    margin-top: 20%;
+}
+
+.flexbox {
+}
+
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.124);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Sofia Sans';
+    backdrop-filter: blur(5px);
+    font-size: 2rem;
+    width: 200px;
+    height: 50px;
+    color: white;
+    transition: 231.49151902ms;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.183);
+    scale: 1.05;
+}
+
+.dc {
+    background-color: rgba(0, 0, 255, 0.372);
+    margin-left: 20px;
+}
+
+.dc:hover {
+    background-color: rgba(0, 0, 255, 0.753);
+
+    /* opacity: 0.5; */
+}
+
+@keyframes dialogopen {
+    from {
+        opacity: 0;
+        scale: 0;
+        filter: blur(15px);
+    } to {
+        
+    }
+}
+
+.dialog {
+    visibility: hidden;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(112, 112, 112, 0.285);
+    backdrop-filter: blur(15px);
+    font-size: 2rem;
+    margin-top: 17%;
+    margin-left: 0%;
+    color: rgb(255, 255, 255);
+    width: 30%;
+    height: 30%;
+}
+
+.c {
+    margin-top: -30px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.c:hover {
+    scale: 1;
+    background-color: rgba(255, 255, 255, 0.547);
+}
